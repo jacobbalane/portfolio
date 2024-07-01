@@ -1,12 +1,14 @@
 import "./App.css";
 import Header from "./components/Header";
-import About from "./components/About";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <div className="">
       <Header title="jacob." />
-      <About />
+      <div className="flex flex-col items-center">
+        <Hero />
+      </div>
     </div>
   );
 }
