@@ -5,9 +5,11 @@ const Hero = () => {
   return (
     <div className="flex flex-col justify-center h-screen lg:w-3/4 lg:border-x lg:border-neutral-400 px-16 py-6 md:items-center">
       <div className="grow flex items-center">
-        <p className="font-montserrat text-3xl md:text-6xl lg:text-7xl text-pretty font-bold text-center">
+        <p className="h-2/5 lg:h-3/5 font-montserrat text-3xl md:text-6xl lg:text-7xl text-pretty font-bold text-center whitespace-pre-line">
           I'm <span className="text-yellow-500">Jacob</span>.{" "}
-          <br className="md:hidden" /> I design and build web applications for{" "}
+          <br className="md:hidden lg:block xl:hidden" /> I design and build web
+          applications <br className="hidden lg:block xl:hidden" /> for{" "}
+          <br className="md:block lg:hidden" />{" "}
           <span className="text-transparent from-pink-600 to-violet-600 bg-gradient-to-r bg-clip-text ">
             <TypeAnimation
               sequence={[
@@ -29,13 +31,22 @@ const Hero = () => {
                 5000,
                 "success.",
                 5000,
-                "collaboration.",
-                5000,
                 "productivity.",
+                5000,
+                "innovation.",
+                5000,
+                "creativity.",
+                5000,
+                "passion.",
+                5000,
+                "people.",
+                5000,
+                "the future.",
                 5000,
               ]}
               repeat={Infinity}
               cursor={false}
+              deletionSpeed={90}
             />
           </span>
         </p>
