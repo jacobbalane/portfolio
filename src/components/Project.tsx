@@ -20,32 +20,30 @@ const Project = () => {
         <p className="hidden lg:block text-xl md:text-3xl font-bold text-right text-yellow-500">
           featured projects
         </p>
-        <div className="flex flex-col space-y-6 md:space-y-7 md:flex-row-reverse">
-          <div className="flex flex-col md:flex-col md:border md:border-neutral-400 space-y-2 md:w-3/4">
-            <div className=" space-y-4 md:px-8 md:pt-6 ">
+        <div className="md:h-full flex flex-col space-y-6 md:space-y-7 md:flex-row-reverse">
+          <div className="md:h-1/2 flex flex-col md:flex-col  space-y-2 md:space-y-0 md:w-3/4">
+            <div className="space-y-4 md:px-8 md:pt-6 md:border md:border-neutral-400">
               <div className="flex justify-between">
                 <p className="font-semibold md:text-xl">Tick</p>
                 <button className="hidden md:block border border-neutral-400 rounded-md text-xs px-4">
                   view in github
                 </button>
               </div>
-              <p className="text-xs md:text-sm">
+              <p className="text-xs md:text-sm text-justify">
                 Transform mundane tasks into exciting challenges as you level up
                 and earn rewards for each accomplishment. Stay motivated,
                 organized, and engaged while conquering your to-do list.
               </p>
               <TechnologyUsed technologies={technologies} />
             </div>
-            <div className="flex flex-col space-y-2">
-              <img
-                className="h-32 object-cover border md:border-x-0 md:border-b-0 border-neutral-400"
-                src={projectPreview}
-                alt=""
-              />
-              <button className="text-xs text-neutral-300 border border-neutral-400 py-2 rounded-sm bg-stone-950 md:hidden">
-                view in github
-              </button>
-            </div>
+            <img
+              className="w-full h-32 md:h-full object-cover border md:border-t-0 border-neutral-400"
+              src={projectPreview}
+              alt=""
+            />
+            <button className="text-xs text-neutral-300 border border-neutral-400 py-2 rounded-sm bg-stone-950 md:hidden">
+              view in github
+            </button>
           </div>
           <div className="space-y-4 md:w-1/4">
             <FeaturedProjects projects={projects} />

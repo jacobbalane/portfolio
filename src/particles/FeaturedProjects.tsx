@@ -6,8 +6,8 @@ interface ProjectsProps {
 
 const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (
-    <div className="flex flex-col text-xs font-montserrat space-y-4 md:space-y-1">
-      <p className="font-semibold md:hidden">Select project to preview:</p>
+    <div className="flex flex-col text-xs font-montserrat space-y-4 md:space-y-6">
+      <p className="font-semibold">preview project:</p>
       <ul className="space-y-1 md:space-y-2">
         {" "}
         {projects.map((project) => (
