@@ -22,14 +22,14 @@ const Project = () => {
         </p>
         <div className="md:h-full flex flex-col space-y-6 md:space-y-7 md:flex-row-reverse">
           <div className="md:h-1/2 flex flex-col md:flex-col  space-y-2 md:space-y-0 md:w-3/4">
-            <div className="space-y-4 md:px-8 md:pt-6 md:border md:border-neutral-400">
+            <div className="space-y-4 md:px-8 md:pt-6 md:pb-2 md:border md:border-neutral-400">
               <div className="flex justify-between">
-                <p className="font-semibold md:text-xl">Tick</p>
-                <button className="hidden md:block border border-neutral-400 rounded-md text-xs px-4">
+                <p className="font-semibold md:text-xl xl:text-2xl ">Tick</p>
+                <button className="hidden md:block border border-neutral-400 rounded-md text-xs  lg:text-sm xl:text-base px-4">
                   view in github
                 </button>
               </div>
-              <p className="text-xs md:text-sm text-justify">
+              <p className="text-xs md:text-sm lg:text-base text-justify xl:text-lg">
                 Transform mundane tasks into exciting challenges as you level up
                 and earn rewards for each accomplishment. Stay motivated,
                 organized, and engaged while conquering your to-do list.
@@ -45,9 +45,11 @@ const Project = () => {
               view in github
             </button>
           </div>
-          <div className="space-y-4 md:w-1/4">
+          <div className="space-y-4 md:w-1/4 md:text-wrap">
             <FeaturedProjects projects={projects} />
-            <p className="text-xs cursor-pointer">view more projects . . .</p>
+            <p className="text-xs md:text-sm lg:text-base cursor-pointer">
+              more projects . . .
+            </p>
           </div>
         </div>
       </div>
