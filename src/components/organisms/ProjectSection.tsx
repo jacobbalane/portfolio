@@ -1,8 +1,8 @@
-import SideText from "../particles/SideText";
-import ProjectDetail from "../particles/ProjectDetail";
-import FeaturedProject from "../particles/FeaturedProject";
+import SideText from "../molecules/SideText";
+import ProjectDetails from "../molecules/ProjectDetails";
+import FeaturedProject from "../molecules/FeaturedProject";
 
-const Project = () => {
+const ProjectSection = () => {
   const description =
     "Transform mundane tasks into exciting challenges as you level up and earn rewards for each accomplishment. Stay motivated, organized, and engaged while conquering your to-do list.";
   const technologies = ["Bootstrap", "PHP", "Laravel", "MySQL"];
@@ -20,7 +20,7 @@ const Project = () => {
           </p>
         </div>
         <div className="flex flex-col space-y-4 md:flex-row-reverse md:space-y-0">
-          <ProjectDetail
+          <ProjectDetails
             name="Tick"
             description={description}
             technologies={technologies}
@@ -33,4 +33,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default ProjectSection;

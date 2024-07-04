@@ -1,8 +1,8 @@
 import React from "react";
 import TechnologyUsed from "./TechnologyUsed";
-import preview from "../images/preview.png";
+import preview from "../../images/preview.png";
 
-interface ProjectDetailProps {
+interface ProjectDetailsProps {
   name: string;
   description: string;
   technologies: string[];
@@ -10,7 +10,7 @@ interface ProjectDetailProps {
   image?: string;
 }
 
-const ProjectDetail: React.FC<ProjectDetailProps> = ({
+const ProjectDetails: React.FC<ProjectDetailsProps> = ({
   name,
   description,
   technologies,
@@ -41,6 +41,4 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({
   );
 };
 
-ProjectDetail.propTypes = {};
-
-export default ProjectDetail;
+export default ProjectDetails;
