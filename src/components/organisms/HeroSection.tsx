@@ -3,7 +3,9 @@ import profile from "../../images/profile.png";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-center h-screen lg:w-3/4 lg:border-x lg:border-neutral-400 px-16 py-6 md:items-center">
+    <div
+      className="flex flex-col justify-center h-screen lg:w-3/4 lg:border-x lg:border-neutral-400 px-16 py-6 md:items-center"
+      id="home">
       <div className="grow flex items-center">
         <p className="h-2/5 lg:h-3/5 font-montserrat text-3xl md:text-6xl lg:text-7xl text-pretty font-bold text-center whitespace-pre-line">
           I'm <span className="text-yellow-500">Jacob</span>.{" "}

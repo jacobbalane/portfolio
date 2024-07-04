@@ -1,16 +1,27 @@
+import { useState } from "react";
+
 import SideText from "../molecules/SideText";
 import ProjectDetails from "../molecules/ProjectDetails";
 import FeaturedProject from "../molecules/FeaturedProject";
 
+import { projectData } from "../../data/projects";
+
 const ProjectSection = () => {
-  const description =
-    "Transform mundane tasks into exciting challenges as you level up and earn rewards for each accomplishment. Stay motivated, organized, and engaged while conquering your to-do list.";
-  const technologies = ["Bootstrap", "PHP", "Laravel", "MySQL"];
-  const github = "github.com/balanejacob/tick";
-  const projects = ["Tick", "BloodPlus", "GEMS", "TaskVenator"];
+  const featuredProjects = projectData.map((project) => ({
+    key: project.key,
+    name: project.name,
+  }));
+
+  const [isPreview, setIsPreview] = useState(0);
+
+  function handlePreview(key: number) {
+    setIsPreview(key);
+  }
 
   return (
-    <div className="flex justify-start w-full h-screen font-montserrat">
+    <div
+      className="flex justify-start w-full h-screen font-montserrat"
+      id="projects">
       <SideText text="projects" />
       <div className=" lg:border-neutral-400 lg:border-x w-full lg:w-3/4 px-16 py-6 space-y-4">
         <div className="h-12 font-montserrat font-bold text-xl text-yellow-500">
@@ -21,12 +32,16 @@ const ProjectSection = () => {
         </div>
         <div className="flex flex-col space-y-4 md:flex-row-reverse md:space-y-0">
           <ProjectDetails
-            name="Tick"
-            description={description}
-            technologies={technologies}
-            github={github}
+            name={projectData[isPreview].name}
+            description={projectData[isPreview].description}
+            technologies={projectData[isPreview].technologies}
+            githubLink={projectData[isPreview].githubLink}
+            imageUrl={projectData[isPreview].imageUrl.toString()}
           />
-          <FeaturedProject projects={projects} />
+          <FeaturedProject
+            projects={featuredProjects}
+            handlePreview={handlePreview}
+          />
         </div>
       </div>
     </div>
