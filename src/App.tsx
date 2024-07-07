@@ -5,7 +5,7 @@ import ProjectSection from "./components/organisms/ProjectSection";
 
 function App() {
   return (
-    <div className="">
+    <div id="home">
       <Header title="jacob." />
       <div className="flex flex-col items-center">
         <HeroSection />
