@@ -32,8 +32,8 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
         </div>
         <TechnologyUsed technologies={technologies} />
       </div>
-      <div className="border border-neutral-400 md:border-x-0 md:border-b-0">
-        <img className="select-none" src={imageUrl} alt="screenshot" />
+      <div className="border border-neutral-400 md:border-x-0 md:border-b-0 h-52 flex justify-center">
+        <img className="select-none h-full" src={imageUrl} alt="screenshot" />
       </div>
       <a href={githubLink}>
         <button className="bg-neutral-800 text-neutral-100 text-xs rounded-sm py-2 md:hidden select-none w-full">

@@ -8,7 +8,7 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
   return (
     <div className="sticky top-0  h-24 flex items-center justify-center px-16 border-b bg-white border-neutral-400 z-10">
       <div className="flex w-full items-center h-8">
-        <a className="grow" href="#home">
+        <a className="grow" href="#">
           <div className="font-montserrat text-xl md:text-2xl font-bold h-full flex items-center select-none">
             {title}
           </div>

@@ -3,9 +3,7 @@ import profile from "../../images/profile.png";
 
 const Hero = () => {
   return (
-    <div
-      className="flex flex-col justify-center h-screen lg:w-3/4 lg:border-x lg:border-neutral-400 px-16 py-6 md:items-center"
-      id="home">
+    <div className="flex flex-col justify-center h-screen lg:w-3/4 lg:border-x lg:border-neutral-400 px-16 py-6 md:items-center">
       <div className="grow flex items-center">
         <p className="h-2/5 lg:h-3/5 font-montserrat text-3xl md:text-6xl lg:text-7xl text-pretty font-bold text-center whitespace-pre-line">
           I'm <span className="text-yellow-500">Jacob</span>.{" "}
@@ -56,7 +54,7 @@ const Hero = () => {
       <div className="h-2/5 flex justify-center">
         <div className="flex flex-col md:flex-row items-center md:justify-center md:items-start md:space-x-8 md:w-3/4 lg:w-5/6 xl:w-4/6">
           <img
-            className="w-20 md:w-52 h-20 md:h-52 rounded-full object-cover object-center"
+            className="w-20 md:w-52 md:h-52 rounded-full object-cover object-center"
             src={profile}
             alt="Jacob's profile"
           />
