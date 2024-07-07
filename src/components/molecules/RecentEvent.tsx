@@ -57,7 +57,11 @@ const RecentEvent: React.FC<RecentEventProps> = ({
               alt=""
             />
           </div>
-          <a href={eventUrl} target="_blank" className="flex justify-center">
+          <a
+            href={eventUrl}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="flex justify-center">
             <button className="underline text-xs ">more images . . .</button>
           </a>
         </div>
