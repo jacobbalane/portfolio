@@ -1,5 +1,4 @@
 import SideText from "../molecules/SideText";
-import Footer from "./Footer";
 
 const ConnectSection = () => {
   return (
