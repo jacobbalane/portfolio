@@ -1,4 +1,3 @@
-import { TypeAnimation } from "react-type-animation";
 import profile from "../../images/profile.png";
 
 const Hero = () => {
