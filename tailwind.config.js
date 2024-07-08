@@ -12,6 +12,9 @@ module.exports = {
         "accent-1": "#F31982",
         "accent-2": "#AEB2BA",
       },
+      fontSize: {
+        "2xs": ["10px", "12px"],
+      },
     },
   },
   plugins: [],

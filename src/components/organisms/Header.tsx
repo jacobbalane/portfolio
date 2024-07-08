@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ main, sub }) => {
         <p className="text-primary">{main}</p>
         <p className="text-accent-2">{sub}</p>
       </div>
-      <div className="hidden md:flex space-x-6 font-montserrat font-semibold text-primary">
+      <div className="hidden md:flex space-x-6 font-montserrat font-semibold text-xs text-primary">
         <button>projects</button>
         <button>events</button>
         <button className=" px-4 py-2 border-2 border-primary rounded-full">
