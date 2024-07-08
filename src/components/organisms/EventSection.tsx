@@ -37,7 +37,7 @@ const EventSection = () => {
       <SideText text="events" />
       <div className=" lg:border-neutral-400 lg:border-x w-full lg:w-3/4 space-y-1 flex flex-col">
         <div className=" h-fit border-b border-neutral-400 px-16 py-6 space-y-2">
-          <div className="h-12 font-montserrat font-bold text-xl text-yellow-500 ">
+          <div className="h-12 font-montserrat font-bold text-xl">
             <p className="md:text-3xl">upcoming events</p>
           </div>
           <div className="flex flex-col space-y-4 ">

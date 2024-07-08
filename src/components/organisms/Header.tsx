@@ -23,11 +23,9 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
             events
           </button>
         </a>
-        <a href="#connect">
-          <button className="bg-yellow-500 w-24 md:w-28 px-5 py-1 text-sm md:text-base font-semibold rounded">
-            let's talk
-          </button>
-        </a>
+        <button className="bg-yellow-500 w-24 md:w-28 px-5 py-1 text-sm md:text-base font-semibold rounded">
+          let's talk
+        </button>
       </div>
     </div>
   );

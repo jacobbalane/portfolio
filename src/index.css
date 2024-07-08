@@ -21,3 +21,7 @@ code {
 .h-screen {
   height: calc(100vh - 6rem);
 }
+
+.h-connect-section {
+  height: calc(100vh - 19rem);
+}

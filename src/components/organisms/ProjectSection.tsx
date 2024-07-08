@@ -24,7 +24,7 @@ const ProjectSection = () => {
       id="projects">
       <SideText text="projects" />
       <div className=" lg:border-neutral-400 lg:border-x w-full lg:w-3/4 px-16 py-6 space-y-4">
-        <div className="h-12 font-montserrat font-bold text-xl text-yellow-500">
+        <div className="h-12 font-montserrat font-bold text-xl">
           <p className="lg:hidden md:text-3xl">projects</p>
           <p className="hidden lg:block text-3xl">featured projects</p>
         </div>
