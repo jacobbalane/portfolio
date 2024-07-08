@@ -6,11 +6,11 @@ module.exports = {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },
-      spacing: {
-        side: "12.5%",
-      },
-      fontSize: {
-        "1xs": ["10px", "12px"],
+      colors: {
+        primary: "#040914",
+        secondary: "#F4F4F4",
+        "accent-1": "#F31982",
+        "accent-2": "#AEB2BA",
       },
     },
   },

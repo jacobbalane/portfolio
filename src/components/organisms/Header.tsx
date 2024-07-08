@@ -1,29 +1,21 @@
 import React from "react";
 
 interface HeaderProps {
-  title: string;
+  main: string;
+  sub: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ title }) => {
+const Header: React.FC<HeaderProps> = ({ main, sub }) => {
   return (
-    <div className="sticky top-0  h-24 flex items-center justify-center px-16 border-b bg-white border-neutral-400 z-10">
-      <div className="flex w-full items-center h-8">
-        <a className="grow" href="#home">
-          <div className="font-montserrat text-xl md:text-2xl font-bold h-full flex items-center select-none">
-            {title}
-          </div>
-        </a>
-        <a href="#projects">
-          <button className="w-16 text-sm md:text-base font-semibold rounded hidden md:block">
-            projects
-          </button>
-        </a>
-        <a href="#events">
-          <button className="w-16 ml-3 mr-5 text-sm md:text-base font-semibold rounded hidden md:block">
-            events
-          </button>
-        </a>
-        <button className="bg-yellow-500 w-24 md:w-28 px-5 py-1 text-sm md:text-base font-semibold rounded">
+    <div className="sticky top-0 z-10 overflow-hidden flex justify-between items-center h-32 bg-secondary px-8 md:px-16">
+      <div className="flex font-montserrat font-bold md:text-xl">
+        <p className="text-primary">{main}</p>
+        <p className="text-accent-2">{sub}</p>
+      </div>
+      <div className="hidden md:flex space-x-6 font-montserrat font-semibold text-primary">
+        <button>projects</button>
+        <button>events</button>
+        <button className=" px-4 py-2 border-2 border-primary rounded-full">
           let's talk
         </button>
       </div>
