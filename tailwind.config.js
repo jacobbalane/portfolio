@@ -15,6 +15,7 @@ module.exports = {
       },
       fontSize: {
         "2xs": ["10px", "12px"],
+        "9xl": ["7rem", "1"],
       },
       height: {
         "screen-calc": "calc(100vh-8rem)",

@@ -6,12 +6,12 @@ import Button from "../atoms/Button";
 
 const Hero = () => {
   return (
-    <div className="md:h-screen-calc flex flex-col justify-end p-8 md:px-16 md:py-20 font-montserrat space-y-8">
+    <div className="md:h-screen-calc flex flex-col justify-end p-8 md:px-16 md:py-20 xl:py-12 font-montserrat space-y-8">
       <div className="grow flex flex-col space-y-2 md:space-y-5">
         <p className="font-semibold text-lg md:text-2xl xl:text-3xl">
           Hello! I'm Jacob.
         </p>
-        <p className="font-bold text-4xl md:text-7xl lg:text-7xl xl:text-8xl  min-h-44 md:min-h-64 lg:min-h-80">
+        <p className="font-bold text-4xl md:text-7xl lg:text-7xl xl:text-9xl  min-h-44 md:min-h-64 lg:min-h-80">
           I design and build innovative web applications for{" "}
           <span className="text-accent-1">
             <TypeAnimation
@@ -67,7 +67,7 @@ const Hero = () => {
               in bringing ideas to life through clean, user-centered solutions.
               Let's collaborate and turn your digital dreams into reality!
             </p>
-            <div className="flex space-x-4">
+            <div className="flex flex-wrap space-x-6">
               <LinkButton label="linkedin" />
               <LinkButton label="github" />
               <LinkButton label="instagram" />

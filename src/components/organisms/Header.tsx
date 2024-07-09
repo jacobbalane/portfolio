@@ -1,4 +1,6 @@
 import React from "react";
+import arrow from "../../images/icons/right-arrow.png";
+import hamburger from "../../images/icons/hamburger.png";
 
 interface HeaderProps {
   main: string;
@@ -15,10 +17,12 @@ const Header: React.FC<HeaderProps> = ({ main, sub }) => {
       <div className="hidden md:flex space-x-6 font-montserrat font-semibold text-xs lg:text-base text-primary">
         <button>projects</button>
         <button>events</button>
-        <button className=" px-4 py-2 border-2 border-primary rounded-full">
-          let's talk
+        <button className="flex space-x-3 items-center px-6 py-2 border-2 border-primary rounded-full">
+          <p>let's talk</p>
+          <img src={arrow} alt="" className="h-5 lg:h-6 xl:h-8" />
         </button>
       </div>
+      <img src={hamburger} alt="" className="md:hidden h-8" />
     </div>
   );
 };
