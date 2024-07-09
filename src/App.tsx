@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Header main="jacob" sub="balane" />
-      <div className="flex flex-col bg-secondary">
+      <div className="flex flex-col bg-secondary space-y-8">
         <Hero />
         <Projects />
         <Events />
