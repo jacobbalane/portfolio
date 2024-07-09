@@ -61,13 +61,13 @@ const Hero = () => {
           <div className="w-20 md:w-48 md:h-60 min-h-28 lg:h-full border border-primary">
             <img src={profile} alt="" className="object-cover h-full" />
           </div>
-          <div className="w-1/2 flex flex-col justify-end grow space-y-4 xl:space-y-7">
+          <div className="w-1/2 flex flex-col justify-end grow space-y-4 xl:space-y-7 lg:pb-6">
             <p className="text-2xs md:text-lg xl:text-2xl font-medium">
               I am a software developer based in Cebu, Philippines. I specialize
               in bringing ideas to life through clean, user-centered solutions.
               Let's collaborate and turn your digital dreams into reality!
             </p>
-            <div className="flex flex-wrap space-x-6">
+            <div className="flex flex-wrap space-x-3">
               <LinkButton label="linkedin" />
               <LinkButton label="github" />
               <LinkButton label="instagram" />
