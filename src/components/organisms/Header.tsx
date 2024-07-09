@@ -9,7 +9,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ main, sub }) => {
   return (
-    <div className="sticky top-0 bg-white z-10 overflow-hidden flex justify-between items-center h-32 px-8 md:px-16">
+    <div className="sticky top-0 bg-secondary z-10 overflow-hidden flex justify-between items-center h-32 px-8 md:px-16">
       <div className="flex font-montserrat font-bold md:text-xl">
         <p className="text-primary">{main}</p>
         <p className="text-accent-2">{sub}</p>
