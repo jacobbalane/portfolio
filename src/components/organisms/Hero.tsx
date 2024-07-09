@@ -6,12 +6,12 @@ import Button from "../atoms/Button";
 
 const Hero = () => {
   return (
-    <div className="md:h-screen-calc flex flex-col justify-end p-8 md:px-16 md:py-20 xl:py-12 font-montserrat space-y-8">
+    <div className="flex flex-col justify-end p-8 pb-12 md:px-16 md:py-20 xl:py-12 font-montserrat space-y-8">
       <div className="grow flex flex-col space-y-2 md:space-y-5">
         <p className="font-semibold text-lg md:text-2xl xl:text-3xl">
           Hello! I'm Jacob.
         </p>
-        <p className="font-bold text-4xl md:text-7xl lg:text-7xl xl:text-9xl  min-h-44 md:min-h-64 lg:min-h-80">
+        <p className="font-bold text-4xl md:text-8xl lg:text-7xl xl:text-9xl  min-h-44 md:min-h-96 lg:min-h-80">
           I design and build innovative web applications for{" "}
           <span className="text-accent-1">
             <TypeAnimation
@@ -56,9 +56,9 @@ const Hero = () => {
           </span>
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row h-1/2 lg:h-1/3 space-y-12 lg:space-y-0 lg:space-x-6">
+      <div className="flex flex-col lg:flex-row h-1/2 lg:h-1/3 space-y-10 lg:space-y-0 lg:space-x-6">
         <div className="flex space-x-5 md:space-x-7 xl:space-x-10 lg:w-4/6">
-          <div className="w-20 md:w-48 md:h-60 min-h-28 lg:h-full border border-primary">
+          <div className="w-20 md:w-48 md:h-60 min-h-28 lg:h-full">
             <img src={profile} alt="" className="object-cover h-full" />
           </div>
           <div className="w-1/2 flex flex-col justify-end grow space-y-4 xl:space-y-7 lg:pb-6">
