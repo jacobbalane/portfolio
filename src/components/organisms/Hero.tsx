@@ -6,13 +6,13 @@ import Button from "../atoms/Button";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col px-8 md:px-16 py-4 font-montserrat space-y-8">
-      <div className="flex flex-col space-y-2">
-        <p className="font-semibold md:text-xl lg:text-2xl">
+    <div className="md:h-screen-calc flex flex-col justify-end p-8 md:px-16 md:py-20 font-montserrat space-y-8">
+      <div className="grow flex flex-col space-y-2 md:space-y-5">
+        <p className="font-semibold text-lg md:text-2xl xl:text-3xl">
           Hello! I'm Jacob.
         </p>
-        <p className="font-bold text-4xl md:text-6xl lg:text-7xl xl:text-8xl  min-h-44 md:min-h-64 lg:min-h-80">
-          I design and build innovative web applications for <br />
+        <p className="font-bold text-4xl md:text-7xl lg:text-7xl xl:text-8xl  min-h-44 md:min-h-64 lg:min-h-80">
+          I design and build innovative web applications for{" "}
           <span className="text-accent-1">
             <TypeAnimation
               sequence={[
@@ -31,7 +31,6 @@ const Hero = () => {
                 "change.",
                 4000,
                 "the future.",
-                4000,
                 4000,
                 "success.",
                 4000,
@@ -57,13 +56,13 @@ const Hero = () => {
           </span>
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row h-fit space-y-12 lg:space-y-0 lg:space-x-6">
-        <div className="flex space-x-5 lg:w-4/6">
-          <div className="w-20 md:w-36 min-h-28 lg:min-h-60 border border-primary">
+      <div className="flex flex-col lg:flex-row h-1/2 lg:h-1/3 space-y-12 lg:space-y-0 lg:space-x-6">
+        <div className="flex space-x-5 md:space-x-7 xl:space-x-10 lg:w-4/6">
+          <div className="w-20 md:w-48 md:h-60 min-h-28 lg:h-full border border-primary">
             <img src={profile} alt="" className="object-cover h-full" />
           </div>
-          <div className="w-1/2 flex flex-col justify-end grow space-y-4">
-            <p className="text-2xs md:text-xs lg:text-base font-medium">
+          <div className="w-1/2 flex flex-col justify-end grow space-y-4 xl:space-y-7">
+            <p className="text-2xs md:text-lg xl:text-2xl font-medium">
               I am a software developer based in Cebu, Philippines. I specialize
               in bringing ideas to life through clean, user-centered solutions.
               Let's collaborate and turn your digital dreams into reality!

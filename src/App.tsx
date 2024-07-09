@@ -4,9 +4,11 @@ import Hero from "./components/organisms/Hero";
 
 function App() {
   return (
-    <div className="flex flex-col">
+    <div>
       <Header main="jacob" sub="balane" />
-      <Hero />
+      <div className="flex flex-col">
+        <Hero />
+      </div>
     </div>
   );
 }

@@ -17,7 +17,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.h-screen {
-  height: calc(100vh - 8rem);
-}

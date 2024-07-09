@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -15,7 +16,19 @@ module.exports = {
       fontSize: {
         "2xs": ["10px", "12px"],
       },
+      height: {
+        "screen-calc": "calc(100vh-8rem)",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      const newUtilities = {
+        ".h-screen-calc": {
+          height: "calc(100vh - 8rem)",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    }),
+  ],
 };
