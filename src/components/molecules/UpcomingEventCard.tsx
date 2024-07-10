@@ -13,18 +13,22 @@ interface UpcomingEventCardProps {
 
 const UpcomingEventCard: React.FC<UpcomingEventCardProps> = ({ event }) => {
   return (
-    <div className="flex flex-col font-montserrat space-y-4 text-2xs">
-      <div className="bg-primary text-secondary rounded-lg px-6 py-5 space-y-2">
-        <p className="font-semibold text-xs">{event.name}</p>
-        <div className="flex flex-col">
-          <p>{event.date}</p>
-          <p>{event.location}</p>
-        </div>
-        <div className="flex justify-between">
-          <LinkButton label="event page" theme="light" />
-          <div className="flex items-center space-x-1">
-            <img src={newMoon} alt="" className="h-1" />
-            <p className="text-2xs">upcoming</p>
+    <div className="md:w-1/2 xl:w-1/4">
+      <div className="flex flex-col font-montserrat space-y-4 md:m-2">
+        <div className="md:h-40 md:flex md:flex-col  bg-primary text-accent-2 rounded-lg px-5 py-3 md:px-6 md:py-4 space-y-2">
+          <p className="text-secondary font-semibold text-xs md:text-base xl:text-lg">
+            {event.name}
+          </p>
+          <div className="grow flex flex-col text-2xs md:text-xs xl:text-base">
+            <p>{event.date}</p>
+            <p>{event.location}</p>
+          </div>
+          <div className="flex justify-between">
+            <LinkButton label="event page" theme="light" />
+            <div className="flex items-center space-x-1">
+              <img src={newMoon} alt="" className="h-1 xl:h-2 opacity-75" />
+              <p className="text-2xs xl:text-base">upcoming</p>
+            </div>
           </div>
         </div>
       </div>

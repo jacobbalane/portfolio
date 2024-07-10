@@ -20,6 +20,14 @@ module.exports = {
       },
       height: {
         "screen-calc": "calc(100vh-8rem)",
+        "28rem": "28rem",
+        "35rem": "35rem",
+      },
+      width: {
+        72: "16rem",
+        96: "20rem",
+        "30rem": "30rem",
+        "32rem": "32rem",
       },
     },
   },

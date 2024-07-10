@@ -12,15 +12,19 @@ interface RecentEventCardProps {
 
 const RecentEventCard: React.FC<RecentEventCardProps> = ({ event }) => {
   return (
-    <div className="flex flex-col font-montserrat space-y-4 text-2xs">
-      <div className="border-2 border-primary rounded-lg px-5 py-3 space-y-2">
-        <p className="font-bold text-xs">{event.name}</p>
-        <div className="flex flex-col">
-          <p>{event.date}</p>
-          <p>{event.location}</p>
-        </div>
-        <div className="flex justify-between">
-          <LinkButton label="event page" theme="dark" />
+    <div className="md:w-1/2 xl:w-1/4">
+      <div className="flex flex-col font-montserrat space-y-4 md:m-2">
+        <div className="md:h-40 md:flex md:flex-col border-2 border-primary rounded-lg px-5 py-3 md:px-6 md:py-4 space-y-2">
+          <p className="font-bold text-xs md:text-base xl:text-lg">
+            {event.name}
+          </p>
+          <div className="grow flex flex-col text-2xs md:text-xs xl:text-base">
+            <p>{event.date}</p>
+            <p>{event.location}</p>
+          </div>
+          <div className="flex justify-between">
+            <LinkButton label="event page" theme="dark" />
+          </div>
         </div>
       </div>
     </div>

@@ -7,9 +7,11 @@ import { upcomingEventData, recentEventData } from "../../data/events";
 const Events = () => {
   return (
     <div className="flex flex-col font-montserrat">
-      <div className="flex flex-col px-8 space-y-4">
-        <p className="font-bold">some events i'm in</p>
-        <div className="flex flex-col space-y-4">
+      <div className="flex flex-col">
+        <p className="font-bold  px-8 md:px-16 md:text-2xl mb-4 md:mb-8 xl:text-3xl">
+          some events i'm in
+        </p>
+        <div className="flex flex-col md:flex-row flex-wrap space-y-4 md:space-y-0 px-8 md:px-14">
           {upcomingEventData.map((event) => (
             <UpcomingEventCard event={event} key={event.key} />
           ))}
