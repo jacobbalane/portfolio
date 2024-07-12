@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </div>
         </div>
         <div className="flex justify-center h-8">
-          <LinkButton label="view project" />
+          <LinkButton label="view project" link={project.githubLink} />
         </div>
       </div>
     </div>

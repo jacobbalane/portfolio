@@ -19,9 +19,21 @@ const Contact = () => {
           </p>
         </div>
         <div className="flex flex-wrap justify-center space-x-4">
-          <LinkButton label="linkedin" view="large" />
-          <LinkButton label="github" view="large" />
-          <LinkButton label="instagram" view="large" />
+          <LinkButton
+            label="linkedin"
+            view="large"
+            link="https://www.linkedin.com/in/balanejacob/"
+          />
+          <LinkButton
+            label="github"
+            view="large"
+            link="https://github.com/jacobbalane"
+          />
+          <LinkButton
+            label="facebook"
+            view="large"
+            link="https://www.facebook.com/balanejacob/"
+          />
         </div>
       </div>
     </div>

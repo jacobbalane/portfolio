@@ -15,8 +15,12 @@ const Header: React.FC<HeaderProps> = ({ main, sub }) => {
         <p className="text-accent-2">{sub}</p>
       </div>
       <div className="hidden md:flex space-x-6 font-montserrat font-semibold text-xs lg:text-base text-primary">
-        <button>projects</button>
-        <button>events</button>
+        <a href="#projects">
+          <button>projects</button>
+        </a>
+        <a href="#events" rel="noopener noreferrer">
+          <button>events</button>
+        </a>
         <button className="flex space-x-3 items-center px-6 py-2 border-2 border-primary rounded-full">
           <p>let's talk</p>
           <img src={arrow} alt="" className="h-5 lg:h-6 xl:h-8" />

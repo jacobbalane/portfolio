@@ -6,7 +6,7 @@ import { upcomingEventData, recentEventData } from "../../data/events";
 
 const Events = () => {
   return (
-    <div className="flex flex-col font-montserrat">
+    <div className="flex flex-col font-montserrat" id="events">
       <div className="flex flex-col">
         <p className="font-bold  px-8 md:px-16 md:text-2xl mb-4 md:mb-8 xl:text-3xl">
           some events i'm in
@@ -20,7 +20,7 @@ const Events = () => {
           ))}
         </div>
       </div>
-      <SectionButton label="more events" />
+      <SectionButton label="more events" link="" />
     </div>
   );
 };

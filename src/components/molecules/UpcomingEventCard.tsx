@@ -24,7 +24,11 @@ const UpcomingEventCard: React.FC<UpcomingEventCardProps> = ({ event }) => {
             <p>{event.location}</p>
           </div>
           <div className="flex justify-between">
-            <LinkButton label="event page" theme="light" />
+            <LinkButton
+              label="event page"
+              theme="light"
+              link={event.eventUrl}
+            />
             <div className="flex items-center space-x-1">
               <img src={newMoon} alt="" className="h-1 xl:h-2 opacity-75" />
               <p className="text-2xs xl:text-base">upcoming</p>

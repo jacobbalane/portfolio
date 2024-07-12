@@ -23,7 +23,7 @@ const RecentEventCard: React.FC<RecentEventCardProps> = ({ event }) => {
             <p>{event.location}</p>
           </div>
           <div className="flex justify-between">
-            <LinkButton label="event page" theme="dark" />
+            <LinkButton label="event page" theme="dark" link={event.eventUrl} />
           </div>
         </div>
       </div>
