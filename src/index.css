@@ -33,3 +33,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Custom styles */
+
+.nav-toggle-btn, .sidebar, .top-bar, .middle-bar, .bottom-bar {
+  transition: 0.3s;
+}
+
+.toggle .top-bar {
+  transform: translate(0, 10px)rotate(45deg);
+}
+
+.toggle .middle-bar {
+  width: 0;
+}
+
+.toggle .bottom-bar {
+  transform: translate(0, -10px)rotate(-45deg);
+}

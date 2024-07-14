@@ -1,13 +1,14 @@
 import React from "react";
 import arrow from "../../images/icons/right-arrow.png";
-import hamburger from "../../images/icons/hamburger.png";
+import Hamburger from "../atoms/Hamburger";
 
 interface HeaderProps {
   main: string;
   sub: string;
+  handleToggle: (bool: boolean) => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ main, sub }) => {
+const Header: React.FC<HeaderProps> = ({ main, sub, handleToggle }) => {
   return (
     <div className="sticky top-0 bg-secondary z-10 overflow-hidden flex justify-between items-center h-32 px-8 md:px-16">
       <div className="flex font-montserrat font-bold md:text-xl">
@@ -24,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({ main, sub }) => {
           </button>
         </a>
       </div>
-      <img src={hamburger} alt="" className="md:hidden h-8" />
+      <Hamburger handleToggle={handleToggle} />
     </div>
   );
 };
