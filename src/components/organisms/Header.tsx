@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import arrow from "../../images/icons/right-arrow.png";
+import arrowLight from "../../images/icons/right-arrow-light.png";
 import Hamburger from "../atoms/Hamburger";
 
 interface HeaderProps {
@@ -10,6 +11,13 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ main, sub, handleToggle, offset }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  function handleHover(bool: boolean) {
+    setIsHovered(bool);
+    console.log(isHovered);
+  }
+
   return (
     <div
       className={`sticky top-0 bg-secondary z-10 overflow-hidden flex justify-between items-center h-32 px-8 md:px-16 ${
@@ -23,9 +31,16 @@ const Header: React.FC<HeaderProps> = ({ main, sub, handleToggle, offset }) => {
         <button>projects</button>
         <button>events</button>
         <a href="mailto:balanejacob1@gmail.com">
-          <button className="flex space-x-3 items-center px-6 py-2 border-2 border-primary rounded-full">
-            <p>let's talk</p>
-            <img src={arrow} alt="" className="h-5 lg:h-6 xl:h-8" />
+          <button
+            className="flex space-x-3 items-center px-6 py-2 border-2 border-primary rounded-full transition duration-300 hover:bg-primary"
+            onMouseEnter={() => handleHover(true)}
+            onMouseLeave={() => handleHover(false)}>
+            <p className={isHovered ? "text-secondary" : ""}>let's talk</p>
+            <img
+              src={!isHovered ? arrow : arrowLight}
+              alt=""
+              className="h-5 lg:h-6 xl:h-8 arrow-icon"
+            />
           </button>
         </a>
       </div>
