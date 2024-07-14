@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./components/organisms/Header";
 import Hero from "./components/organisms/Hero";
 import Projects from "./components/organisms/Projects";
@@ -10,15 +10,30 @@ import Sidebar from "./components/molecules/Sidebar";
 
 function App() {
   const [isToggled, setIsToggled] = useState(false);
+  const [offset, setOffset] = useState(0);
 
   function handleToggle(bool: boolean) {
     setIsToggled(bool);
   }
 
+  useEffect(() => {
+    const onScroll = () => setOffset(window.scrollY);
+
+    window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  console.log(offset);
   return (
     <div>
       <div>
-        <Header main="jacob" sub="balane" handleToggle={handleToggle} />
+        <Header
+          main="jacob"
+          sub="balane"
+          handleToggle={handleToggle}
+          offset={offset}
+        />
         <div className="flex flex-col bg-secondary space-y-8">
           <Hero />
           <Projects />
