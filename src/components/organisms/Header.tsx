@@ -17,10 +17,12 @@ const Header: React.FC<HeaderProps> = ({ main, sub }) => {
       <div className="hidden md:flex space-x-6 font-montserrat font-semibold text-xs lg:text-base text-primary">
         <button>projects</button>
         <button>events</button>
-        <button className="flex space-x-3 items-center px-6 py-2 border-2 border-primary rounded-full">
-          <p>let's talk</p>
-          <img src={arrow} alt="" className="h-5 lg:h-6 xl:h-8" />
-        </button>
+        <a href="mailto:balanejacob1@gmail.com">
+          <button className="flex space-x-3 items-center px-6 py-2 border-2 border-primary rounded-full">
+            <p>let's talk</p>
+            <img src={arrow} alt="" className="h-5 lg:h-6 xl:h-8" />
+          </button>
+        </a>
       </div>
       <img src={hamburger} alt="" className="md:hidden h-8" />
     </div>

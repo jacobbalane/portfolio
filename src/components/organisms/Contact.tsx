@@ -12,7 +12,7 @@ const Contact = () => {
             Have a question, suggestion, or just want to say hello? Feel free to
             reach out! You can{" "}
             <span className="text-accent-1 font-semibold">
-              send me an email
+              <a href="mailto:balanejacob1@gmail.com">send me an email</a>
             </span>{" "}
             and I'll get back to you as soon as possible. I look forward to
             hearing from you!
