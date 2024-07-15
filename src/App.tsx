@@ -7,6 +7,7 @@ import Events from "./components/organisms/Events";
 import Contact from "./components/organisms/Contact";
 import Footer from "./components/organisms/Footer";
 import Sidebar from "./components/molecules/Sidebar";
+import Resume from "./components/molecules/Resume";
 
 function App() {
   const [isToggled, setIsToggled] = useState(false);
@@ -24,7 +25,6 @@ function App() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  console.log(offset);
   return (
     <div>
       <div>
@@ -36,9 +36,11 @@ function App() {
         />
         <div className="flex flex-col bg-secondary space-y-8">
           <Hero />
+          <Resume type="text" />
           <Projects />
           <Events />
           <Contact />
+          <Resume type="button" />
           <Footer />
         </div>
         <Sidebar toggle={isToggled} />
