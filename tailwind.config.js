@@ -22,6 +22,7 @@ module.exports = {
         "screen-calc": "calc(100vh-8rem)",
         "28rem": "28rem",
         "35rem": "35rem",
+        "38rem": "38rem",
       },
       width: {
         72: "16rem",

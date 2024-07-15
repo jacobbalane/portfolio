@@ -6,7 +6,6 @@ export const projectData = [
       "Transform mundane tasks into exciting challenges as you level up and earn rewards for each accomplishment. Stay motivated, organized, and engaged while conquering your to-do list.",
     technologies: ["Bootstrap", "PHP", "Laravel", "MySQL"],
     githubLink: "https://github.com/balanejacob/Tick/tree/main/Tick",
-    imageUrl: require("../images/project-images/tick.png"),
   },
   {
     key: 1,
@@ -15,7 +14,6 @@ export const projectData = [
       "A platform where users can view individuals in need of blood donations and those looking to donate. It connects donors and recipients, making it easier to find and offer lifesaving blood donations efficiently.",
     technologies: ["Laravel", "PHP", "MySQL"],
     githubLink: "https://github.com/balanejacob/BloodPlus",
-    imageUrl: require("../images/project-images/bloodplus.png"),
   },
   {
     key: 2,
@@ -31,7 +29,6 @@ export const projectData = [
       "PHP",
     ],
     githubLink: "https://github.com/balanejacob/GEMS",
-    imageUrl: require("../images/project-images/gems.jpg"),
   },
   {
     key: 3,
@@ -40,6 +37,5 @@ export const projectData = [
       "Simpson's Rule calculator, streamlining calculations for faster and easier solutions, providing essential steps for problem-solving",
     technologies: ["ReactJS", "TypeScript", "Tailwind", "Vercel", "Javascript"],
     githubLink: "https://github.com/balanejacob/simpsons-rule",
-    imageUrl: require("../images/project-images/simpsons-rule-calculator.png"),
   },
 ];
