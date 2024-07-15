@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ main, sub, handleToggle, offset }) => {
   return (
     <div
       className={`sticky top-0 bg-secondary z-10 overflow-hidden flex justify-between items-center h-32 px-8 md:px-16 ${
-        offset >= 100 ? "border-b border-accent-2" : ""
+        offset > 0 ? "border-b border-accent-2" : ""
       }`}>
       <div className="flex font-montserrat font-bold md:text-xl">
         <p className="text-primary">{main}</p>

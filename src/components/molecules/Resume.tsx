@@ -16,9 +16,9 @@ const Resume: React.FC<ResumeProps> = ({ type }) => {
   return (
     <div>
       {type === "text" ? (
-        <div className="h-40 flex items-center justify-center mx-8 pb-8 text-center">
-          <p className="text font-montserrat font-semibold">
-            Know more about me by <br /> downloading my{" "}
+        <div className="h-40 md:h-60 flex items-center justify-center mx-8 pb-8 text-center">
+          <p className="text font-montserrat font-semibold md:text-lg">
+            Know more about me by <br className="md:hidden" /> downloading my{" "}
             <a
               href={require("../../data/resume/jacobbalane-resume.pdf")}
               download="jacobbalane-resume.pdf">
@@ -37,13 +37,13 @@ const Resume: React.FC<ResumeProps> = ({ type }) => {
               className="border border-primary rounded py-2 px-4 text-primary flex justify-between items-center space-x-2 hover:bg-primary hover:text-secondary transition duration-300"
               onMouseEnter={() => handleHover(true)}
               onMouseLeave={() => handleHover(false)}>
-              <p className="font-semibold text-2xs duration-0">
+              <p className="font-semibold text-2xs md:text-sm xl:text-base duration-0">
                 download resume
               </p>
               <img
                 src={!isHovered ? arrowDown : arrowDownLight}
                 alt=""
-                className="h-3"
+                className="h-3 xl:h-4"
               />
             </button>
           </a>
