@@ -15,7 +15,7 @@ const Hamburger: React.FC<HamburgerProps> = ({ handleToggle }) => {
   return (
     <button
       className={`md:hidden flex flex-col items-center justify-center h-8 w-8 space-y-2 nav-toggle-btn ${
-        isToggled ? "bg-primary rounded-full toggle" : ""
+        isToggled ? "bg-accent-1 rounded-full toggle" : ""
       }`}
       onClick={handleOnClick}>
       <div

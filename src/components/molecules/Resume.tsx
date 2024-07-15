@@ -16,7 +16,7 @@ const Resume: React.FC<ResumeProps> = ({ type }) => {
   return (
     <div>
       {type === "text" ? (
-        <div className="flex items-center justify-center mx-8 pb-8 text-center">
+        <div className="h-40 flex items-center justify-center mx-8 pb-8 text-center">
           <p className="text font-montserrat font-semibold">
             Know more about me by <br /> downloading my{" "}
             <a

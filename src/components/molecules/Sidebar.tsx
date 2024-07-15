@@ -8,10 +8,10 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ toggle }) => {
   return (
     <div
-      className={`md:hidden top-[135px] right-2 z-20 w-32 bg-secondary border border-accent-2 rounded-md sidebar ${
+      className={`md:hidden top-[135px] right-2 z-20 w-40 bg-secondary border border-accent-2 rounded-md sidebar ${
         toggle ? "fixed" : "hidden"
       }`}>
-      <div className="h-full flex flex-col items-center w-full text-xs font-semibold font-montserrat space-y-3 px-2 pt-4 pb-2">
+      <div className="h-full flex flex-col items-center w-full text-xs font-semibold font-montserrat space-y-5 px-2 pt-6 pb-2">
         <button>projects</button>
         <button>events</button>
         <a href="mailto:balanejacob1@gmail.com" className="w-full">
