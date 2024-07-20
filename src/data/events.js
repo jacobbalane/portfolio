@@ -1,14 +1,13 @@
-export const upcomingEventData = [
+export const upcomingEventData = [];
+
+export const recentEventData = [
   {
-    key: 0,
+    key: 6,
     name: "Google I/O Extended Cebu 2024",
     location: "Cebu, Philippines",
     date: "07/20/2024",
     eventUrl: "https://www.facebook.com/share/p/CJwZSzvDLBByNwrm/",
   },
-];
-
-export const recentEventData = [
   {
     key: 5,
     name: "International Women's Day Cebu 2024",
