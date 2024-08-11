@@ -17,7 +17,7 @@ const Hero = () => {
           <hr className="bg-white opacity-30 border-0 h-0.5 " />
         </div>
         <div className="flex items-center w-3/4">
-          <p className="text-white opacity-30 text-sm text-justify">
+          <p className="text-white opacity-30 text-sm">
             I am a software developer based in Cebu, Philippines. I specialize
             in bringing ideas to life through clean, user-centered solutions.
           </p>
