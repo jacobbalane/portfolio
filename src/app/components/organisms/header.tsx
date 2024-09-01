@@ -12,7 +12,7 @@ export default function Header({ offset }: HeaderProps) {
       className={`sticky top-0 overflow-hidden z-10 bg-primary px-8 ${
         offset > 0 ? "border-b border-neutral-800" : ""
       }`}>
-      <div className="mx-auto  max-w-96">
+      <div className="mx-auto max-w-96">
         <div className="flex my-auto items-center justify-between h-28">
           <div className="flex items-center space-x-3">
             <Image
@@ -22,7 +22,7 @@ export default function Header({ offset }: HeaderProps) {
               width={30}
               priority
             />
-            <p className="font-semibold text-sm text-secondary opacity-65">
+            <p className="font-semibold text-sm opacity-65">
               jacob<span className="opacity-30">balane</span>
             </p>
           </div>

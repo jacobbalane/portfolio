@@ -16,6 +16,8 @@ const config: Config = {
       colors: {
         primary: "#131313",
         secondary: "#ffffff",
+        accent1: "#232323",
+        accent2: "#393939",
       },
       opacity: {
         "30": ".30",

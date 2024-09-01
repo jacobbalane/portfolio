@@ -3,8 +3,8 @@ import { VscSparkleFilled } from "react-icons/vsc";
 
 export default function Hero() {
   return (
-    <div className="flex items-center justify-center px-8 py-14 bg-primary">
-      <div className="text-secondary opacity-87 space-y-20">
+    <div className="flex items-center justify-center px-8 py-14">
+      <div className="space-y-20">
         <div className="max-w-96 space-y-4">
           <p className="text-xl opacity-65 font-medium">Hello! I’m Jacob.</p>
           <p className=" text-4xl opacity-87 font-bold leading-tight">
