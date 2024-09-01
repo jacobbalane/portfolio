@@ -2,9 +2,16 @@ import Image from "next/image";
 import Logo from "../../../assets/logo.jpg";
 import Hamburger from "../atoms/hamburger";
 
-export default function Header() {
+interface HeaderProps {
+  readonly offset: number;
+}
+
+export default function Header({ offset }: HeaderProps) {
   return (
-    <div className="sticky top-0 overflow-hidden z-10">
+    <div
+      className={`sticky top-0 overflow-hidden z-10 ${
+        offset > 0 ? "border-b border-neutral-800" : ""
+      }`}>
       <div className="flex my-auto items-center justify-between h-28 px-8 bg-primary ">
         <div className="flex items-center space-x-3">
           <Image
