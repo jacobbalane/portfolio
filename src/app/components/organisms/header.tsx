@@ -9,7 +9,7 @@ interface HeaderProps {
 export default function Header({ offset }: HeaderProps) {
   return (
     <div
-      className={`sticky top-0 overflow-hidden z-10 bg-primary px-8 ${
+      className={`sticky top-0 overflow-hidden z-20 bg-primary px-8 ${
         offset > 0 ? "border-b border-neutral-800" : ""
       }`}>
       <div className="mx-auto max-w-96">

@@ -16,7 +16,7 @@ export default function Hero() {
               </span>
             </span>{" "}
             and{" "}
-            <span className="inline-flex text-cyan-400 border-2 border-cyan-400 rounded-md">
+            <span className="inline-flex text-cyan-500 border-2 border-cyan-500 rounded-md">
               <span className="flex space-x-1 px-2 items-center">
                 <span>build</span>
                 <FaCode className="text-[25px]" />

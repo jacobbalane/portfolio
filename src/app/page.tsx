@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Header from "./components/organisms/header";
 import Hero from "./components/organisms/hero";
 import Project from "./components/organisms/projects";
+import Event from "./components/organisms/events";
 
 export default function Home() {
   const [offset, setOffset] = useState(0);
@@ -22,6 +23,7 @@ export default function Home() {
       <Header offset={offset} />
       <Hero />
       <Project offset={offset} />
+      <Event offset={offset} />
     </div>
   );
 }

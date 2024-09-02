@@ -15,6 +15,7 @@ export default function Project({ offset }: ProjectProps) {
           subtitle="Highlighting "
           highlight="my latest creations"
           offset={offset}
+          minOffset={200}
         />
         <div className="flex flex-col space-y-4">
           <ProjectPreview
@@ -28,7 +29,7 @@ export default function Project({ offset }: ProjectProps) {
             description="An educational app that gamifies learning with interactive quizzes, achievements, and leaderboards to boost engagement and retention."
           />
         </div>
-        <Button text="View All Projects" />
+        <Button text="View Projects" />
       </div>
     </div>
   );
