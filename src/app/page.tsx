@@ -9,6 +9,7 @@ export default function Home() {
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
+    console.log(window.scrollY);
     const onScroll = () => setOffset(window.scrollY);
 
     window.removeEventListener("scroll", onScroll);
@@ -20,7 +21,7 @@ export default function Home() {
     <div className="bg-primary text-secondary">
       <Header offset={offset} />
       <Hero />
-      <Project />
+      <Project offset={offset} />
     </div>
   );
 }
