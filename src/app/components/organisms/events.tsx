@@ -12,8 +12,7 @@ export default function Event({ offset }: EventProps) {
       <div className="flex flex-col space-y-10 max-w-96 mx-auto">
         <Title
           title="Upcoming and Recent Events"
-          subtitle="A journey through "
-          highlight="my event participation"
+          subtitle="A journey through my event participation"
           offset={offset}
           minOffset={1300}
         />

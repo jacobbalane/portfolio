@@ -5,7 +5,7 @@ import "./globals.css";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "jacobbalane",
+  title: "Jacob Balane",
   description: "Jacob Balane's personal website",
 };
 

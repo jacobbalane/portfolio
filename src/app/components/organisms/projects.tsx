@@ -12,8 +12,7 @@ export default function Project({ offset }: ProjectProps) {
       <div className="flex flex-col space-y-10 max-w-96 mx-auto">
         <Title
           title="Featured Designs and Builds"
-          subtitle="Highlighting "
-          highlight="my latest creations"
+          subtitle="Highlighting my latest creations"
           offset={offset}
           minOffset={200}
         />

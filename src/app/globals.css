@@ -12,3 +12,10 @@ body {
     text-wrap: balance;
   }
 }
+
+.mix-blend-text {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  mix-blend-mode: difference;
+}

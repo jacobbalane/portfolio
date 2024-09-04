@@ -5,6 +5,7 @@ import Header from "./components/organisms/header";
 import Hero from "./components/organisms/hero";
 import Project from "./components/organisms/projects";
 import Event from "./components/organisms/events";
+import Contact from "./components/organisms/contact";
 
 export default function Home() {
   const [offset, setOffset] = useState(0);
@@ -19,11 +20,12 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-primary text-secondary">
+    <div className="bg-primary text-secondary scroll-smooth">
       <Header offset={offset} />
       <Hero />
       <Project offset={offset} />
       <Event offset={offset} />
+      <Contact offset={offset} />
     </div>
   );
 }

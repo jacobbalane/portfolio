@@ -27,17 +27,17 @@ export default function EventPreview({
         )}
         <p className="opacity-87 font-semibold text-lg leading-tight">{name}</p>
         <div className="font-light text-sm">
-          <div className="flex items-center space-x-2">
-            <IoCalendarClear className="text-cyan-500" />
-            <p className="opacity-65">{date}</p>
+          <div className="flex items-center space-x-2 opacity-65">
+            <IoCalendarClear />
+            <p>{date}</p>
           </div>
-          <div className="flex items-center space-x-2">
-            <IoTime className="text-yellow-300" />
-            <p className="opacity-65">{time}</p>
+          <div className="flex items-center space-x-2 opacity-65">
+            <IoTime />
+            <p>{time}</p>
           </div>
-          <div className="flex items-center space-x-2">
-            <IoLocationSharp className="text-pink-500" />
-            <p className="opacity-65">{venue}</p>
+          <div className="flex items-center space-x-2  opacity-65">
+            <IoLocationSharp />
+            <p>{venue}</p>
           </div>
         </div>
       </div>
