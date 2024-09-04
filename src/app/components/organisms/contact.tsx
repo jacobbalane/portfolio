@@ -14,7 +14,7 @@ export default function Contact({ offset }: EventPreviewProps) {
           offset={offset}
           minOffset={1300}
         />
-        <p className="opacity-30 text-2xl">
+        <p className="opacity-65 text-2xl">
           Questions, suggestions, or just want to say hello? Drop me an email ,
           and I’ll get back to you soon. Looking forward to hearing from you!
         </p>

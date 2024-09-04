@@ -6,6 +6,7 @@ import Hero from "./components/organisms/hero";
 import Project from "./components/organisms/projects";
 import Event from "./components/organisms/events";
 import Contact from "./components/organisms/contact";
+import Social from "./components/organisms/socials";
 
 export default function Home() {
   const [offset, setOffset] = useState(0);
@@ -26,6 +27,7 @@ export default function Home() {
       <Project offset={offset} />
       <Event offset={offset} />
       <Contact offset={offset} />
+      <Social />
     </div>
   );
 }

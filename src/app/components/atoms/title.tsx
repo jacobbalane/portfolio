@@ -1,8 +1,8 @@
 interface TitleProps {
   readonly title: string;
   readonly subtitle: string;
-  readonly offset: number;
-  readonly minOffset: number;
+  readonly offset?: number;
+  readonly minOffset?: number;
 }
 
 export default function Title({
