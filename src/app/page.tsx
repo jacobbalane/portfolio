@@ -8,6 +8,7 @@ import Event from "./components/organisms/events";
 import Contact from "./components/organisms/contact";
 import Social from "./components/organisms/socials";
 import Upnext from "./components/organisms/upnext";
+import Footer from "./components/organisms/footer";
 
 export default function Home() {
   const [offset, setOffset] = useState(0);
@@ -34,6 +35,7 @@ export default function Home() {
         subtitle="Explore what I’m working on and what I’ve achieved"
         buttonText="Projects"
       />
+      <Footer />
     </div>
   );
 }
