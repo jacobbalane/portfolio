@@ -14,10 +14,13 @@ export default function Contact({ offset }: EventPreviewProps) {
           offset={offset}
           minOffset={1300}
         />
-        <div className="opacity-65 text-2xl font-medium">
-          Questions, suggestions, or just want to say hello?{" "}
-          <mark className="scroll-highlight">Drop me an email</mark> , and I’ll
-          get back to you soon. Looking forward to hearing from you!
+        <div className="opacity-65 text-2xl">
+          <mark className="scroll-highlight">
+            {" "}
+            Questions, suggestions, or just want to say hello? Drop me an email
+            , and I’ll get back to you soon. Looking forward to hearing from
+            you!
+          </mark>
         </div>
       </div>
     </div>

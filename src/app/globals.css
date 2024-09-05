@@ -14,6 +14,8 @@ body {
 }
 
 mark.scroll-highlight {
+  color: #fff;
+
   background-size: 0 100%;
   background-repeat: no-repeat;
   background-color: transparent;
