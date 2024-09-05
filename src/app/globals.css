@@ -13,9 +13,25 @@ body {
   }
 }
 
-.mix-blend-text {
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  mix-blend-mode: difference;
+mark.scroll-highlight {
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: linear-gradient(cyan, cyan);
+
+  animation: mark-it linear;
+  animation-fill-mode: forwards;
+  animation-timeline: view();
+  animation-iteration-count: 1;
+  animation-range: contain 30% contain 70%;
+}
+
+@keyframes mark-it {
+  0% {
+    background-size: 0 100%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
 }
