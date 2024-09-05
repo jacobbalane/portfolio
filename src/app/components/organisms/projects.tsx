@@ -1,4 +1,4 @@
-import Button from "../atoms/button";
+import SectionButton from "../atoms/sectionButton";
 import Title from "../atoms/title";
 import ProjectPreview from "../molecules/projectPreview";
 
@@ -28,7 +28,7 @@ export default function Project({ offset }: ProjectProps) {
             description="An educational app that gamifies learning with interactive quizzes, achievements, and leaderboards to boost engagement and retention."
           />
         </div>
-        <Button text="View Projects" />
+        <SectionButton text="View Projects" />
       </div>
     </div>
   );

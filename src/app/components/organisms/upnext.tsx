@@ -1,4 +1,4 @@
-import PageButton from "../atoms/pageButton";
+import SectionButton from "../atoms/sectionButton";
 import Title from "../atoms/title";
 
 interface UpnextProps {
@@ -12,7 +12,7 @@ export default function Upnext({ title, subtitle, buttonText }: UpnextProps) {
     <div className="px-8 py-14">
       <div className="flex flex-col space-y-10 max-w-96 mx-auto">
         <Title title={`Upnext: ${title}`} subtitle={subtitle} />
-        <PageButton text={`Go to ${buttonText} Page`} />
+        <SectionButton text={`Go to ${buttonText} Page`} />
       </div>
     </div>
   );

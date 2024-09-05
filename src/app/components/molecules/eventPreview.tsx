@@ -1,4 +1,7 @@
+import Button from "../atoms/button";
+
 import { IoCalendarClear, IoTime, IoLocationSharp } from "react-icons/io5";
+import { MdEvent } from "react-icons/md";
 
 interface EventPreviewProps {
   readonly name: string;
@@ -41,10 +44,8 @@ export default function EventPreview({
           </div>
         </div>
       </div>
-      <div className="space-y-2 mt-8">
-        <button className="bg-emerald-600 px-8 py-4 rounded-lg text-base w-full">
-          Go to Event Page
-        </button>
+      <div className="mt-8">
+        <Button text="Go to Event Page" Icon={MdEvent} />
       </div>
     </div>
   );

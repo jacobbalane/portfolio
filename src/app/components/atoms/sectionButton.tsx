@@ -1,8 +1,8 @@
-interface PageButtonProps {
+interface SectionButtonProps {
   readonly text: string;
 }
 
-export default function PageButton({ text }: PageButtonProps) {
+export default function SectionButton({ text }: SectionButtonProps) {
   return (
     <div className="flex justify-center bg-accent1 border border-accent2  px-8 py-4 rounded-full">
       {text}

@@ -2,7 +2,12 @@ import Title from "../atoms/title";
 import Button from "../atoms/button";
 import Link from "next/link";
 
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithub,
+  FaLinkedin,
+  FaFileDownload,
+} from "react-icons/fa";
 
 export default function Socials() {
   return (
@@ -38,7 +43,7 @@ export default function Socials() {
             <p>Linkedin</p>
           </Link>
         </div>
-        <Button text="Download Resume" />
+        <Button text="Download Resume" Icon={FaFileDownload} />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import Button from "../atoms/button";
+import SectionButton from "../atoms/sectionButton";
 import Title from "../atoms/title";
 import EventPreview from "../molecules/eventPreview";
 
@@ -39,7 +39,7 @@ export default function Event({ offset }: EventProps) {
             upcoming={false}
           />
         </div>
-        <Button text="View Events" />
+        <SectionButton text="View Events" />
       </div>
     </div>
   );
