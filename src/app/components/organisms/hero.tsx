@@ -16,7 +16,7 @@ export default function Hero() {
               </span>
             </span>{" "}
             and{" "}
-            <span className="inline-flex text-cyan-500 border-2 border-cyan-500 rounded-md">
+            <span className="inline-flex text-cyan-500 border border-cyan-500">
               <span className="flex space-x-1 px-2 items-center">
                 <span>build</span>
                 <FaCode className="text-[25px]" />
@@ -32,13 +32,20 @@ export default function Hero() {
             </span>{" "}
           </p>
         </div>
-        <div className="max-w-96 space-y-4">
-          <div className="h-0.5 w-14 bg-secondary opacity-65"></div>
-          <p className="text-lg opacity-65">
-            I am a software developer based in Cebu, Philippines. I craft
-            intuitive and efficient web applications tailored to meet the unique
-            needs of my clients.
-          </p>
+        <div className="space-y-8">
+          <hr className="bg-secondary h-0.5 w-12 opacity-30" />
+          <div className="text-xl max-w-96 space-y-4 relative">
+            <p className="opacity-30 absolute">
+              I am a software developer based in Cebu, Philippines. I craft
+              intuitive and efficient web applications tailored to meet the
+              unique needs of my clients.
+            </p>
+            <mark className="scroll-highlight">
+              I am a software developer based in Cebu, Philippines. I craft
+              intuitive and efficient web applications tailored to meet the
+              unique needs of my clients.
+            </mark>
+          </div>
         </div>
       </div>
     </div>

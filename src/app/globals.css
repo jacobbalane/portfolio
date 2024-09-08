@@ -14,18 +14,20 @@ body {
 }
 
 mark.scroll-highlight {
-  color: #fff;
-
+  color: white;
   background-size: 0 100%;
   background-repeat: no-repeat;
   background-color: transparent;
-  background-image: linear-gradient(cyan, cyan);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
 
-  animation: mark-it linear;
-  animation-fill-mode: forwards;
+
+  animation: mark-it 1s ease-in-out forwards;
   animation-timeline: view();
   animation-iteration-count: 1;
-  animation-range: contain 30% contain 70%;
+  animation-range: contain 45% contain 60%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes mark-it {
