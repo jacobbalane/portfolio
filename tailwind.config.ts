@@ -12,6 +12,12 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        outfit: "var(--font-outfit-regular)",
+        outfitBold: "var(--font-outfit-bold)",
+        spacemono: "var(--font-spacemono-regular)",
+        spacemonoBold: "var(--font-spacemono-bold)",
+      },
     },
   },
   plugins: [],
