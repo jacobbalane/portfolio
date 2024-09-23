@@ -1,4 +1,4 @@
-import PageMark from "./PageMark";
+import PageMark from "../atoms/PageMark";
 
 export default function ProgressBar() {
   return (
