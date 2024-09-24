@@ -9,7 +9,7 @@ export default function Hero() {
           Hi 👋 I&apos;m Jacob
         </p>
         <p className="uppercase text-pretty font-outfitBold text-4xl md:text-7xl lg:text-8xl md:text-center">
-          designing and building web apps for learning
+          designing and building web apps for entertainment
         </p>
       </div>
       <div className="flex flex-col md:items-center space-y-8 md:space-y-12">
