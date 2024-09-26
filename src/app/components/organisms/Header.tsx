@@ -5,8 +5,8 @@ import Navigation from "../molecules/Navigation";
 
 export default function Header() {
   return (
-    <div className="sticky top-0 h-20 md:h-32 ">
-      <div className="h-full md:max-w-mdMaxWidth lg:max-w-lgMaxWidth flex items-center justify-between px-8 md:px-16 mx-auto">
+    <div className="sticky top-0 h-20 md:h-32 z-20">
+      <div className="h-full md:max-w-mdMaxWidth lg:max-w-lgMaxWidth flex items-center justify-between px-8 md:px-16 mx-auto bg-background">
         <Logo />
         <Navigation />
         <Hamburger />

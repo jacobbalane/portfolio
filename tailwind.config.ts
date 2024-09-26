@@ -13,6 +13,8 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         accent1: "var(--accent1)",
+        accent2: "var(--accent2)",
+        accent3: "var(--accent3)",
       },
       fontFamily: {
         outfit: "var(--font-outfit-regular)",

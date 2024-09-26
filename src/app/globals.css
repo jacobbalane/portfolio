@@ -8,11 +8,17 @@
   --accent1: #3a3a3a;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --accent1: #3a3a3a;
+    --accent1: #4d4d4d;
+    --accent2: #808080;
+    --accent3: #101010;
   }
 }
 
