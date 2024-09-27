@@ -6,7 +6,9 @@ import { upcomingEventData, recentEventData } from "../../data/events";
 
 const Events = () => {
   return (
-    <div className="flex flex-col font-montserrat" id="events">
+    <div
+      className="flex flex-col font-montserrat md:max-w-[50rem] lg:max-w-[60rem] xl:max-w-[75rem] mx-auto"
+      id="events">
       <div className="flex flex-col">
         <p className="font-bold  px-8 md:px-16 md:text-2xl mb-4 md:mb-8 xl:text-3xl">
           some events i'm in

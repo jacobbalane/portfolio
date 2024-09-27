@@ -2,7 +2,7 @@ import LinkButton from "../atoms/LinkButton";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col font-montserrat">
+    <div className="flex flex-col font-montserrat md:max-w-[50rem] lg:max-w-[60rem] xl:max-w-[75rem] mx-auto">
       <div className="flex flex-col px-8 md:px-16 space-y-4 mb-4 md:mb-10">
         <p className="font-bold md:text-2xl md:mb-8 xl:text-3xl">
           connect with me

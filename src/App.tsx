@@ -27,24 +27,22 @@ function App() {
 
   return (
     <div>
-      <div>
-        <Header
-          main="jacob"
-          sub="balane"
-          handleToggle={handleToggle}
-          offset={offset}
-        />
-        <div className="flex flex-col bg-secondary space-y-8">
-          <Hero />
-          <Resume type="text" />
-          <Projects />
-          <Events />
-          <Contact />
-          <Resume type="button" />
-          <Footer />
-        </div>
-        <Sidebar toggle={isToggled} />
+      <Header
+        main="jacob"
+        sub="balane"
+        handleToggle={handleToggle}
+        offset={offset}
+      />
+      <div className="flex flex-col bg-secondary space-y-8">
+        <Hero />
+        <Resume type="text" />
+        <Projects />
+        <Events />
+        <Contact />
+        <Resume type="button" />
+        <Footer />
       </div>
+      <Sidebar toggle={isToggled} />
     </div>
   );
 }

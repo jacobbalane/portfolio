@@ -14,7 +14,7 @@ const Resume: React.FC<ResumeProps> = ({ type }) => {
     console.log(isHovered);
   }
   return (
-    <div>
+    <div className="md:max-w-[50rem] lg:max-w-[60rem] xl:max-w-[75rem] mx-auto">
       {type === "text" ? (
         <div className="h-40 md:h-60 flex items-center justify-center mx-8 pb-8 text-center">
           <p className="text font-montserrat font-semibold md:text-lg">

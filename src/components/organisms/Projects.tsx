@@ -13,7 +13,9 @@ const Projects = () => {
   }));
 
   return (
-    <div className="flex flex-col font-montserrat" id="projects">
+    <div
+      className="flex flex-col font-montserrat md:max-w-[50rem] lg:max-w-[60rem] xl:max-w-[75rem] mx-auto"
+      id="projects ">
       <div className="px-8 md:px-16 mb-4 md:mb-8">
         <p className="font-bold md:text-2xl xl:text-3xl">featured projects</p>
       </div>
