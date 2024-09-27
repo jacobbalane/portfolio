@@ -14,7 +14,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="md:min-h-35rem xl:min-h-80 w-full md:w-1/2 xl:w-1/4 md:p-2">
+    <div className="md:min-h-35rem xl:min-h-80 w-full md:w-1/2 md:p-2">
       <div className=" border-2 border-primary rounded-lg h-full">
         <div className="flex flex-col h-full">
           <div className="grow flex flex-col px-5 py-3 md:px-6 md:py-4 space-y-2 md:space-y-4">
