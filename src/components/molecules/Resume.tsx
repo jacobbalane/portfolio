@@ -14,10 +14,10 @@ const Resume: React.FC<ResumeProps> = ({ type }) => {
     console.log(isHovered);
   }
   return (
-    <div className="md:max-w-[50rem] lg:max-w-[60rem] xl:max-w-[75rem] mx-auto">
+    <div className="w-full px-8 md:max-w-[50rem] lg:max-w-[60rem] xl:max-w-[75rem] mx-auto">
       {type === "text" ? (
         <div className="h-40 md:h-60 flex items-center justify-center mx-8 pb-8 text-center">
-          <p className="text font-montserrat font-semibold md:text-lg">
+          <p className="text font-montserrat font-semibold text-lg">
             Know more about me by <br className="md:hidden" /> downloading my{" "}
             <a
               href={require("../../data/resume/jacobbalane-resume.pdf")}
@@ -29,21 +29,22 @@ const Resume: React.FC<ResumeProps> = ({ type }) => {
           </p>
         </div>
       ) : (
-        <div className="flex flex-col justify-center items-center font-montserrat space-y-3 pb-4">
+        <div className="w-full flex flex-col justify-center items-center font-montserrat space-y-3 pb-4">
           <a
+            className="w-full"
             href={require("../../data/resume/jacobbalane-resume.pdf")}
             download="jacobbalane-resume.pdf">
             <button
-              className="border border-primary rounded py-2 px-4 text-primary flex justify-between items-center space-x-2 hover:bg-primary hover:text-secondary transition duration-300"
+              className="w-full border border-primary rounded py-2 px-4 text-primary flex justify-center items-center space-x-2 hover:bg-primary hover:text-secondary transition duration-300"
               onMouseEnter={() => handleHover(true)}
               onMouseLeave={() => handleHover(false)}>
-              <p className="font-semibold text-2xs md:text-sm xl:text-base duration-0">
+              <p className="font-semibold text-lg duration-0">
                 download resume
               </p>
               <img
                 src={!isHovered ? arrowDown : arrowDownLight}
                 alt=""
-                className="h-3 xl:h-4"
+                className="h-4"
               />
             </button>
           </a>

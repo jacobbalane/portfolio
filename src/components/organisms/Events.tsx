@@ -7,10 +7,10 @@ import { upcomingEventData, recentEventData } from "../../data/events";
 const Events = () => {
   return (
     <div
-      className="flex flex-col font-montserrat md:max-w-[50rem] lg:max-w-[60rem] xl:max-w-[75rem] mx-auto"
+      className="flex flex-col font-montserrat md:max-w-[50rem] lg:max-w-[60rem] xl:max-w-[75rem] md:mx-auto"
       id="events">
       <div className="flex flex-col">
-        <p className="font-bold  px-8 md:px-16 lg:px-0 md:text-2xl mb-4 md:mb-8 xl:text-3xl">
+        <p className="font-bold px-8 md:px-16 lg:px-0 text-2xl mb-4 md:mb-8 xl:text-3xl capitalize">
           some events i'm in
         </p>
         <div className="flex flex-col md:flex-row flex-wrap space-y-4 md:space-y-0 px-8 md:px-14 lg:px-0">
