@@ -13,21 +13,21 @@ export default function Hamburger({ toggled, handleToggle }: HamburgerProps) {
       <div className="flex">
         <div
           className={`w-5 h-0.5 bg-foreground transition-all duration-300 ${
-            toggled ? "rotate-45 translate-x-[3px] translate-y-0.5 w-4" : ""
+            toggled ? "rotate-45 translate-x-[3px] w-4" : ""
           }`}></div>
         <div
           className={`w-5 h-0.5 bg-foreground transition-all duration-300 ${
-            toggled ? "-rotate-45 -translate-x-[3px] translate-y-0.5 w-4" : ""
+            toggled ? "-rotate-45 -translate-x-[3px] w-4" : ""
           }`}></div>
       </div>
       <div className="flex">
         <div
           className={`w-5 h-0.5 bg-foreground transition-all duration-300 ${
-            toggled ? "-rotate-45 translate-x-[3px] -translate-y-0.5 w-4" : ""
+            toggled ? "-rotate-45 translate-x-[3px] w-4" : ""
           }`}></div>
         <div
           className={`w-5 h-0.5 bg-foreground transition-all duration-300 ${
-            toggled ? "rotate-45 -translate-x-[3px] -translate-y-0.5 w-4" : ""
+            toggled ? "rotate-45 -translate-x-[3px] w-4" : ""
           }`}></div>
       </div>
     </button>
