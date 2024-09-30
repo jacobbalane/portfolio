@@ -10,7 +10,7 @@ export default function Header() {
         <Logo />
         <Navigation />
         <Hamburger />
-        <SectionButton />
+        <SectionButton type="resume" />
       </div>
     </div>
   );

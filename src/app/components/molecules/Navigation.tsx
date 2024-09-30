@@ -7,8 +7,8 @@ export default function PageProgress() {
       <ul className="flex space-x-2 lg:space-x-10">
         <NavigationButton text="home" />
         <NavigationButton text="works" />
-        <NavigationButton text="events" />
-        <NavigationButton text="connect" />
+        {/* <NavigationButton text="events" />
+        <NavigationButton text="connect" /> */}
       </ul>
       <ProgressBar />
     </div>

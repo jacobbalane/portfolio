@@ -1,17 +1,19 @@
 import TechnologyInstance from "../atoms/TechnologyInstance";
 
+import { getTechnologyColor } from "../../utils/getTechnologyColor";
+
 interface TechnologyStackProps {
-  readonly list: { text: string; color: string }[];
+  readonly list: string[];
 }
 
 export default function Technologies({ list }: TechnologyStackProps) {
   return (
     <div className="flex flex-wrap">
-      {list.map((tech) => (
+      {list.map((technology) => (
         <TechnologyInstance
-          key={tech.text}
-          color={tech.color}
-          string={tech.text}
+          key={technology}
+          color={getTechnologyColor(technology)}
+          name={technology}
         />
       ))}
     </div>
