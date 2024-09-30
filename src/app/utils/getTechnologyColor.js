@@ -1,4 +1,4 @@
-import { technologyColor } from "../data/TechnologyColor";
+import { technologyColor } from "../data/technologyColor";
 
 export const getTechnologyColor = (name) => {
   const technology = technologyColor.find(
