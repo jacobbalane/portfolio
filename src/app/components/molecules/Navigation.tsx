@@ -5,10 +5,10 @@ export default function PageProgress() {
   return (
     <div className="hidden md:flex flex-col space-y-1 lg:space-y-2">
       <ul className="flex space-x-2 lg:space-x-10">
-        <NavigationButton text="home" />
-        <NavigationButton text="works" />
-        {/* <NavigationButton text="events" />
-        <NavigationButton text="connect" /> */}
+        <NavigationButton text="Home" />
+        <NavigationButton text="Works" />
+        {/* <NavigationButton text="Events" />
+        <NavigationButton text="Connect" /> */}
       </ul>
       <ProgressBar />
     </div>
