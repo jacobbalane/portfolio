@@ -9,7 +9,7 @@ export default function Hamburger({ toggled, handleToggle }: HamburgerProps) {
   };
 
   return (
-    <button className="space-y-3" onClick={handleSidebarToggle}>
+    <button className="space-y-3 md:hidden" onClick={handleSidebarToggle}>
       <div className="flex">
         <div
           className={`w-5 h-0.5 bg-foreground transition-all duration-300 ${
