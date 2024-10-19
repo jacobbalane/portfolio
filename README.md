@@ -1,4 +1,4 @@
-#View Live: https://jacobbalane.com
+## View Live: https://jacobbalane.com
 
 # Getting Started with Create React App
 
